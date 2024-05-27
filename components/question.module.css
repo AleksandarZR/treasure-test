@@ -12,6 +12,7 @@
 
 .question {
     margin-right: 1rem;
+    word-wrap: break-word;
 }
 
 .answer {
@@ -20,6 +21,7 @@
     font-weight: bold;
     font-size: 1rem;
     margin-right: 1rem;
+    max-height: 2.5rem;
 }
 
 .cipherVisible {
@@ -31,6 +33,7 @@
     text-align: center;
     font-size: 2rem;
     border: 0.125rem solid rgb(87, 87, 87);
+    max-height: 2.5rem;
 }
 
 .cipherInvisible {
@@ -42,6 +45,7 @@
     text-align: center;
     font-size: 0rem;
     border: 0.125rem solid rgb(87, 87, 87);
+    max-height: 2.5rem;
 }
 
 /* Mobile */
@@ -56,10 +60,16 @@
 
     .cipherVisible {
         grid-area: checkmark;
+        justify-self: end;
+    }
+
+    .cipherInvisible {
+        grid-area: checkmark;
+        justify-self: end;
     }
 
     .container {
-        grid-template-columns: 7.5rem 7.5rem 7.5rem 7.5rem;
+        grid-template-columns: 7.5rem 7.5rem 7.5rem 3rem;
         grid-template-rows: auto;
         grid-template-areas:
             "question question question question"
