@@ -1,0 +1,69 @@
+.container {
+    display: grid;
+    grid-template-columns: 400px 100px 38px;
+    grid-template-rows: auto;
+    column-gap: 5px;
+    row-gap: 5px;
+
+    padding: 1rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+
+.question {
+    margin-right: 1rem;
+}
+
+.answer {
+    margin-right: 0rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+.cipherVisible {
+    display: inline-block;
+    background-color: rgb(29, 215, 29);
+    color: white;
+    line-height: 0px;
+    border-radius: 50%;
+    font-size: 32px;
+}
+
+.cipherInvisible {
+    display: inline-block;
+    background-color: red;
+    color: red;
+    line-height: 0px;
+    border-radius: 50%;
+    font-size: 32px;
+}
+
+.cipherVisible span {
+    display: inline-block;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.cipherInvisible span {
+    display: inline-block;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: auto;
+        text-align: center;
+    }
+}
