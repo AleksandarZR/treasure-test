@@ -24,9 +24,9 @@ export default function Question(props: Props) {
         <div className={styles.container}>
             <p className={styles.question}>{props.questionText}</p>
             <input className={styles.answer} type="text" id={props.answerExpected} value={answer} onChange={e => setAnswer(e.target.value)}></input>
-            <span className={isAnswerCorrect() ? styles.cipherVisible : styles.cipherInvisible}>
-                <span>{props.cipher}</span>
-            </span>
+            <div className={isAnswerCorrect() ? styles.cipherVisible : styles.cipherInvisible}>
+                {props.cipher}
+            </div>
         </div>
     );
 }

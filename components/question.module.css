@@ -1,12 +1,12 @@
 .container {
     display: grid;
-    grid-template-columns: 400px 100px 38px;
+    grid-template-columns: 27rem 7rem 2.5rem;
     grid-template-rows: auto;
     column-gap: 5px;
     row-gap: 5px;
 
     padding: 1rem;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
 }
 
@@ -16,54 +16,53 @@
 
 .answer {
     margin-right: 0rem;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     font-size: 1rem;
     margin-right: 1rem;
 }
 
 .cipherVisible {
-    display: inline-block;
     background-color: rgb(29, 215, 29);
     color: white;
-    line-height: 0px;
+    width: 2.5rem;
+    line-height: 2.5rem;
     border-radius: 50%;
-    font-size: 32px;
+    text-align: center;
+    font-size: 2rem;
+    border: 0.125rem solid rgb(87, 87, 87);
 }
 
 .cipherInvisible {
-    display: inline-block;
-    background-color: red;
-    color: red;
-    line-height: 0px;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
+    width: 2.5rem;
+    line-height: 2.5rem;
     border-radius: 50%;
-    font-size: 32px;
-}
-
-.cipherVisible span {
-    display: inline-block;
-    padding-top: 50%;
-    padding-bottom: 50%;
-    margin-left: 8px;
-    margin-right: 8px;
-}
-
-.cipherInvisible span {
-    display: inline-block;
-    padding-top: 50%;
-    padding-bottom: 50%;
-    margin-left: 8px;
-    margin-right: 8px;
+    text-align: center;
+    font-size: 0rem;
+    border: 0.125rem solid rgb(87, 87, 87);
 }
 
 /* Mobile */
 @media (max-width: 700px) {
+    .question {
+        grid-area: question;
+    }
+
+    .answer {
+        grid-area: answer;
+    }
+
+    .cipherVisible {
+        grid-area: checkmark;
+    }
+
     .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        max-width: auto;
-        text-align: center;
+        grid-template-columns: 7.5rem 7.5rem 7.5rem 7.5rem;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "question question question question"
+            "answer answer answer checkmark";
     }
 }

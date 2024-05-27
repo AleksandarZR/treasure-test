@@ -25,8 +25,8 @@ export const questions = [
     },
     {
         id: 5,
-        questionText: "Kako se zove prestonica Italije?",
-        answerExpected: "Rim",
+        questionText: "Who is the most powerful man in the universe?",
+        answerExpected: "He-Man",
         cipher: "✓",
     },
 ];
