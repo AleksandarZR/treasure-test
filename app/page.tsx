@@ -50,6 +50,9 @@ export default function Home() {
 
     return (
         <main className={styles.main}>
+            <div className={styles.coin}>
+                $
+            </div>
             <div className={styles.picture}>
                 <Image
                     src="/pirate.png"
