@@ -24,34 +24,6 @@
     max-width: 100vw;
 }
 
-@keyframes animation-falling {
-    0% {
-        transform: translateY(0rem);
-    }
-    100% {
-        transform: translateY(27rem);
-    }
-}
-
-.coin {
-    width: 2rem;
-    height: 2.5rem;
-    background-color: gold;
-    width: 2.5rem;
-    line-height: 2.5rem;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 2rem;
-    border: 0.125rem solid rgb(172, 149, 20);
-
-
-    animation-name: animation-falling;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-out;
-    animation-delay: 0s;
-}
-
 @media (max-width: 700px) {
     .pictureInner {
         width: 300px;

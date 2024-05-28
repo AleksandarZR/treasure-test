@@ -1,0 +1,161 @@
+.containerVisible {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+
+.containerInvisible {
+    display: none;
+}
+
+@keyframes animation-falling {
+    0% {
+        transform: translateY(0rem);
+    }
+
+    100% {
+        transform: translateY(90rem);
+    }
+}
+
+.coin {
+    width: 2rem;
+    height: 2.5rem;
+    background-color: gold;
+    width: 2.5rem;
+    line-height: 2.5rem;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2rem;
+    border: 0.125rem solid rgb(172, 149, 20);
+
+    animation-name: animation-falling;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+}
+
+.coin1 {
+    position: absolute;
+    top: -7rem;
+    left: -12rem;
+}
+
+.coin2 {
+    position: absolute;
+    top: -12rem;
+    left: -8rem;
+    animation-delay: 1s;
+}
+
+.coin3 {
+    position: absolute;
+    top: -13rem;
+    left: -4rem;
+    animation-delay: 2s;
+}
+
+.coin4 {
+    position: absolute;
+    top: -15rem;
+    left: 0rem;
+    animation-delay: 3s;
+}
+
+.coin5 {
+    position: absolute;
+    top: -21rem;
+    left: 4rem;
+}
+
+.coin6 {
+    position: absolute;
+    top: -12rem;
+    left: 8rem;
+    animation-delay: 2s;
+}
+
+.coin7 {
+    position: absolute;
+    top: -18rem;
+    left: 12rem;
+    animation-delay: 5s;
+}
+
+.coin8 {
+    position: absolute;
+    top: -13rem;
+    left: -12rem;
+    animation-delay: 5s;
+}
+
+.coin9 {
+    position: absolute;
+    top: -17rem;
+    left: -8rem;
+    animation-delay: 3s;
+}
+
+.coin10 {
+    position: absolute;
+    top: -10rem;
+    left: -4rem;
+    animation-delay: 1s;
+}
+
+.coin11 {
+    position: absolute;
+    top: -20rem;
+    left: -6rem;
+    animation-delay: 1s;
+}
+
+.coin12 {
+    position: absolute;
+    top: -13rem;
+    left: 4rem;
+    animation-delay: 7s;
+}
+
+.coin13 {
+    position: absolute;
+    top: -15rem;
+    left: 8rem;
+    animation-delay: 6s;
+}
+
+.coin14 {
+    position: absolute;
+    top: -10rem;
+    left: 12rem;
+    animation-delay: 4s;
+}
+
+.coin15 {
+    position: absolute;
+    top: -9rem;
+    left: 12rem;
+    animation-delay: 0.5s;
+}
+
+.coin16 {
+    position: absolute;
+    top: -17rem;
+    left: 4.5rem;
+    animation-delay: 6s;
+}
+
+.coin17 {
+    position: absolute;
+    top: -12rem;
+    left: 7.5rem;
+    animation-delay: 4s;
+}
+
+.coin18 {
+    position: absolute;
+    top: -12rem;
+    left: -1rem;
+    animation-delay: 0.5s;
+}

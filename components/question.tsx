@@ -23,7 +23,6 @@ export default function Question(props: Props) {
     }
 
     const answerChanged = (value: any) => {
-        console.log('answer: ' + value);
         setAnswer(value);
         props.onAnswered(props.id, (value === props.answerExpected)? true : false);
     }

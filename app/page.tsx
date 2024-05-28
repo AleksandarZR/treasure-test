@@ -3,31 +3,36 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Question from "../components/question";
+import Coins from '../components/coins';
 import { questions } from '../data/mocks';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 interface QuestionPair {
     id: number;
     isAnswerCorrect: boolean;
 }
+var questionPairs = new Array<QuestionPair>();
 
 export default function Home() {
-    const [allAnswersCorrect, setAllAnswersCorrect] = useState(false);
-    var questionPairs = new Array<QuestionPair>();
+    const [allAnswersCorrect, setAllAnswersCorrect] = useState(false); 
 
-    const Initialize = () => {
-        questions.forEach((q) => {
-            const p: QuestionPair = { id: q.id, isAnswerCorrect: false };
-            questionPairs.push(p);
-        });
-    }
-    Initialize();
+    useEffect(() => {
+        console.log("Initialize called");
+        if (questionPairs.length === 0) {
+            questions.forEach((q) => {
+                const p: QuestionPair = { id: q.id, isAnswerCorrect: false };
+                questionPairs.push(p);
+            });
+        }
+    }, []);
 
     const answerChanged = (id: number, answeredCorrectly: boolean) => {
+        console.log('answer changed: ' + id + " " + answeredCorrectly);
         questionPairs.forEach((qp) => {
             if (qp.id === id) {
                 qp.isAnswerCorrect = answeredCorrectly;
+                console.log('id, qp.id, answeredCorrectly: ' + id + ' ' + qp.id + ' ' + answeredCorrectly)
             }
         });
 
@@ -50,9 +55,8 @@ export default function Home() {
 
     return (
         <main className={styles.main}>
-            <div className={styles.coin}>
-                $
-            </div>
+            <Coins visibility={allAnswersCorrect} />
+
             <div className={styles.picture}>
                 <Image
                     src="/pirate.png"
