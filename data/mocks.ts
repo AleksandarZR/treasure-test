@@ -11,7 +11,7 @@ export const questions = [
         answerExpected: "12",
         cipher: "✓",
     },
-    /*{
+    {
         id: 3,
         questionText: "Koliko krakova ima oktopod?",
         answerExpected: "8",
@@ -28,5 +28,5 @@ export const questions = [
         questionText: "Who is the most powerful man in the universe?",
         answerExpected: "He-Man",
         cipher: "✓",
-    },*/
+    },
 ];
