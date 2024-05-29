@@ -58,13 +58,6 @@ export default function Home() {
             <Coins visibility={allAnswersCorrect} />
 
             <div className={styles.picture}>
-                <img width={400}
-                    height="auto"
-                    src="znanje.png" 
-                />
-            </div>
-
-            <div className={styles.picture}>
                 <Image
                     src="pirate.png"
                     alt="Pirate"
