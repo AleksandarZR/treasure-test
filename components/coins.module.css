@@ -14,7 +14,7 @@
     }
 
     100% {
-        transform: translateY(90rem) rotate3d(0, 1, 0, 3.14rad);
+        transform: translateY(100rem) rotate3d(0, 1, 0, 3.14rad);
         
     }
 }
@@ -135,8 +135,8 @@
 
 .coin15 {
     position: absolute;
-    top: -9rem;
-    left: 12rem;
+    top: -12rem;
+    left: 15rem;
     animation-delay: 0.5s;
 }
 

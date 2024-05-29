@@ -15,6 +15,12 @@
     height: 500px;
 }
 
+.pictureZnanje {
+    width: 500px;
+    height: auto;
+    src: "/znanje.png";
+}
+
 .center {
     display: flex;
     flex-direction: column;
@@ -28,5 +34,8 @@
     .pictureInner {
         width: 300px;
         height: 300px;
+    }
+    .pictureZnanje {
+        width: 300px;
     }
 }

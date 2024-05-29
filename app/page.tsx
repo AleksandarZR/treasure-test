@@ -15,7 +15,7 @@ interface QuestionPair {
 var questionPairs = new Array<QuestionPair>();
 
 export default function Home() {
-    const [allAnswersCorrect, setAllAnswersCorrect] = useState(false); 
+    const [allAnswersCorrect, setAllAnswersCorrect] = useState(false);
 
     useEffect(() => {
         console.log("Initialize called");
@@ -56,6 +56,13 @@ export default function Home() {
     return (
         <main className={styles.main}>
             <Coins visibility={allAnswersCorrect} />
+
+            <div className={styles.picture}>
+                <img width={400}
+                    height="auto"
+                    src="/znanje.png" 
+                />
+            </div>
 
             <div className={styles.picture}>
                 <Image
