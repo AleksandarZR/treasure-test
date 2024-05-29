@@ -60,13 +60,13 @@ export default function Home() {
             <div className={styles.picture}>
                 <img width={400}
                     height="auto"
-                    src="/znanje.png" 
+                    src="znanje.png" 
                 />
             </div>
 
             <div className={styles.picture}>
                 <Image
-                    src="/pirate.png"
+                    src="pirate.png"
                     alt="Pirate"
                     className={styles.pictureInner}
                     width={500}
@@ -82,7 +82,7 @@ export default function Home() {
 
             <div className={styles.picture}>
                 <Image
-                    src="/treasure.png"
+                    src="treasure.png"
                     alt="Treasure"
                     className={styles.pictureInner}
                     width={500}
