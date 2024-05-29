@@ -6,7 +6,6 @@ import Question from "../components/question";
 import Coins from '../components/coins';
 import { questions } from '../data/mocks';
 import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
 
 interface QuestionPair {
     id: number;
@@ -56,6 +55,13 @@ export default function Home() {
     return (
         <main className={styles.main}>
             <Coins visibility={allAnswersCorrect} />
+
+            <div className={styles.picture}>
+                <img width={400}
+                    height="auto"
+                    src="znanje.png"
+                />
+            </div>
 
             <div className={styles.picture}>
                 <Image
