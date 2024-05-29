@@ -14,7 +14,7 @@
     }
 
     100% {
-        transform: translateY(100rem) rotate3d(0, 1, 0, 3.14rad);
+        transform: translateY(110rem) rotate3d(0, 1, 0, 3.14rad);
         
     }
 }
