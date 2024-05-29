@@ -6,7 +6,7 @@ import styles from "./question.module.css";
 interface Props {
     id: number,
     questionText: string,
-    answerExpected: string,
+    answerExpected: string[],
     cipher: string,
     onAnswered(id: number, isAnswerCorrect: boolean): void
 };
@@ -15,7 +15,7 @@ export default function Question(props: Props) {
     const [answer, setAnswer] = useState("");
 
     const isAnswerCorrect = () => {
-        if (answer === props.answerExpected) {
+        if (props.answerExpected.includes(answer)) {
             return true;
         } else {
             return false;
@@ -24,7 +24,7 @@ export default function Question(props: Props) {
 
     const answerChanged = (value: any) => {
         setAnswer(value);
-        props.onAnswered(props.id, (value === props.answerExpected)? true : false);
+        props.onAnswered(props.id, (props.answerExpected.includes(value))? true : false);
     }
 
     return (
